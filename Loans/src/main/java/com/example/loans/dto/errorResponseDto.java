@@ -8,9 +8,12 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+//DTO class to hold error response
 @Schema(name="errorResponse" , description="schema to hold error response info")
 @Data @AllArgsConstructor
 public class errorResponseDto {
+	
+	//schema is used for swagger documentation purpose.
 
 	@Schema(description="api path invoked by client")
 	private String apiPath;
